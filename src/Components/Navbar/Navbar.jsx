@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../public/assets/logo.jpg";
+import logo from "../../assets/logo.jpg";
 import { IoClose } from "react-icons/io5";
 import { RiMenu2Line } from "react-icons/ri";
 
