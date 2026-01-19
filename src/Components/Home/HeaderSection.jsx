@@ -6,7 +6,7 @@ export default function HeaderSection() {
       <div className="mx-auto w-screen max-w-6xl px-5 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-3xl font-bold leading-snug text-gray-900 sm:text-4xl md:text-5xl">
-            Discover how to{" "}
+            Discover how to {""}
             <strong className="text-indigo-600">grow your business</strong> with better user experience
           </h1>
 
