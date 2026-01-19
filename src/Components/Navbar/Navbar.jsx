@@ -26,7 +26,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-white text-[#121212] fixed left-0 right-0 z-[999] shadow-sm">
+    <nav className="bg-white text-[#121212] fixed left-0 right-0 z-999 shadow-sm">
       <div className="container mx-auto px-6">
         {/* Desktop Navbar */}
         <div className="hidden lg:flex justify-between items-center py-1">
@@ -55,13 +55,13 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <a
               href="#"
-              className="bg-gradient-to-t from-[#2C5EE9] to-[#7D23CE] text-white px-4 py-2 transition cursor-pointer"
+              className="bg-linear-to-t from-[#2C5EE9] to-[#7D23CE] text-white px-4 py-2 transition cursor-pointer"
             >
               Sign In
             </a>
             <a
                 href="#"
-              className="border border-[#2C5EE9] text-[#2C5EE9] px-4 py-2 transition duration-300 hover:bg-gradient-to-t hover:from-[#2C5EE9] hover:to-[#7D23CE] hover:text-white"
+              className="border border-[#2C5EE9] text-[#2C5EE9] px-4 py-2 transition duration-300 hover:bg-linear-to-t hover:from-[#2C5EE9] hover:to-[#7D23CE] hover:text-white"
             >
               Sign Up
             </a>
@@ -110,7 +110,7 @@ export default function Navbar() {
               <a
                 href="#"
                 onClick={closeMenu}
-                className="bg-gradient-to-t from-[#2C5EE9] to-[#7D23CE] text-white px-4 py-2 transition cursor-pointer"
+                className="bg-linear-to-t from-[#2C5EE9] to-[#7D23CE] text-white px-4 py-2 transition cursor-pointer"
               >
                 Sign In
               </a>
@@ -118,7 +118,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#"
-                className="border border-[#2C5EE9] text-[#2C5EE9] px-4 py-2 transition duration-300 hover:bg-gradient-to-t hover:from-[#2C5EE9] hover:to-[#7D23CE] hover:text-white"
+                className="border border-[#2C5EE9] text-[#2C5EE9] px-4 py-2 transition duration-300 hover:bg-linear-to-t hover:from-[#2C5EE9] hover:to-[#7D23CE] hover:text-white"
               >
                 Sign Up
               </a>
@@ -128,9 +128,9 @@ export default function Navbar() {
       </div>
 
       {/* Scroll Progress Bar */}
-      <div className="absolute bottom-0 left-0 w-full h-[4px] bg-gray-200 z-[998]"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gray-200 z-998"></div>
       <div
-        className="absolute bottom-0 left-0 h-[5px] bg-gradient-to-r from-[#2C5EE9] to-[#7D23CE] z-[999]"
+        className="absolute bottom-0 left-0 h-[5px] bg-linear-to-r from-[#2C5EE9] to-[#7D23CE] z-999"
         style={{ width: `${scrollProgress}%` }}
       ></div>
     </nav>
